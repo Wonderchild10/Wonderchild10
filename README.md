@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Wonderchild10
 - 👀 I’m interested in verilog and C language coding 
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
+- 🌱 I’m currently learning computer architecture, data structures and algorithms.
+- 💞️ I’m looking to collaborate on personal projects!
 - 📫 How to reach me ...
 
 <!---
