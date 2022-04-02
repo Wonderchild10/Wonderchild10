@@ -18,14 +18,14 @@ module stack (
 	output reg [WIDTH - 1:0] q;
 	input                    push;
 	input                    pop;
-	output	wire			 overflow_o;
-	output	wire			 underflow_o;
+	output	wire		 overflow_o;
+	output	wire		 underflow_o;
 
-	reg [DEPTH - 1:0] ptr;
+	reg [DEPTH - 1:0]   ptr;
 	//reg [WIDTH - 1:0] stack [0:(1 << DEPTH) - 1];
-	reg [WIDTH - 1:0] stack [0:(2**DEPTH) - 1];
-	reg overflow;
-	reg	underflow;
+	reg [WIDTH - 1:0]   stack [0:(2**DEPTH) - 1];
+	reg		    overflow;
+	reg		    underflow;
 	
 	
 	always @(posedge clk) begin
@@ -48,7 +48,7 @@ module stack (
 		
 		else if (push || pop) begin
 			if(push)
-				stack[ptr] <= q;
+			stack[ptr] <= q;
 
 			q <= stack[ptr - 1];
 		end
