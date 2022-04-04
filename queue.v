@@ -16,15 +16,15 @@ module queue (
 	input                    reset;
 	input      [WIDTH - 1:0] d;
 	output reg [WIDTH - 1:0] q;
-	output wire 			 full;
-	output wire				 empty;
+	output wire 		 full;
+	output wire		 empty;
 	input                    enqueue;
 	input                    dequeue;
 
 	reg [DEPTH - 1:0] eq_ptr;
 	reg [DEPTH - 1:0] dq_ptr;
 	reg [WIDTH - 1:0] stack [0:(1 << DEPTH) - 1];
-	reg [1:0]		  op_prev; //record previous operation is enqueue or dequeue
+	reg [1:0]	  op_prev; //record previous operation is enqueue or dequeue
 	
 	 
 	always @(posedge clk) begin
@@ -38,9 +38,9 @@ module queue (
 			if(!full)	begin
 				//wrapping
 				if(&eq_ptr)
-				eq_ptr <= 0;
+					eq_ptr <= 0;
 				else
-				eq_ptr <= eq_ptr + 1;
+					eq_ptr <= eq_ptr + 1;
 			end
 		end		
 		else if (dequeue)	begin 
@@ -48,9 +48,9 @@ module queue (
 			if(!empty)	begin
 				//wrapping 
 				if(&dq_ptr)
-				dq_ptr <= 0;
+					dq_ptr <= 0;
 				else
-				dq_ptr <= dq_ptr + 1;
+					dq_ptr <= dq_ptr + 1;
 			end
 		end	
 	end
