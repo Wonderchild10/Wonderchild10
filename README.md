@@ -2,7 +2,7 @@
 - 👀 I’m interested in verilog and C language coding 
 - 🌱 I’m currently learning computer architecture, data structures and algorithms.
 - 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 📫 Welcome to leave comments/suggestions on my code. Feedback is highly appreciated! 
 
 <!---
 Wonderchild10/Wonderchild10 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
